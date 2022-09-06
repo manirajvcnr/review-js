@@ -1,9 +1,10 @@
 // sum of POSITIVE
-let a=parseInt(prompt("enter the number")),
-b=parseInt(prompt("enter the number")),c;
+let sum = 0;
+let number = parseInt(prompt('Enter a number'));
 
-do{
-	c=a+b;
-	console.log(c);
+do {
+    sum += number;
+    number = parseInt(prompt('Enter a number'));
 }
-while(a>0&&b>0)
+while(number >= 0)
+console.log("The sum of a number is "+sum);
