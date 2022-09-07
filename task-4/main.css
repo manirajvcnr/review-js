@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #212529;
+	background:white;
+  }
+  
+  @media(min-width:100px){
+	  .over-all{
+		  height:auto;
+		  width:100%;
+	  }
+	/*work info*/
+    .info{
+		padding:10px;
+		height:auto;
+		width:100%;
+		text-align:center;
+		background:	#ADD8E6;
+		display:flex;
+		justify-content:space-evenly;
+		flex-wrap:wrap;
+	}	
+	.information{
+		font-family: 'Raleway', sans-serif;
+		width:100%;
+	}
+	.information span{
+		font-size:30px;
+		font-weight:700;
+		font-family: 'Poppins', sans-serif;
+		/*font-family: 'Raleway', sans-serif;*/
+	}
+	
+	/*About*/
+	.about-flex{
+		padding:10px;
+	}
+	.left img{
+		height:auto;
+		width:100%;
+	}
+	.right{
+		text-align:center;
+		font-family: 'Poppins', sans-serif;
+	}
+	.right h2{
+		padding:10px;
+		font-size:26px;
+	}
+	.right span{
+		font-family:italic;
+		padding:10px;
+	}
+	.right ul li{
+		text-align:left;
+		padding:5px;
+	}
+	.right ul li i{
+		margin-right:5px;
+		color:blue;
+		font-size:20px;
+	}
+	.right p{
+		padding:10px;
+		line-height:1.4;
+	}
+	
+  }
+  
+   /*screen 764px*/
+    @media(min-width:764px){
+	  .over-all{
+		  height:auto;
+		  width:100%;
+	  }
+	/*work info*/
+    .info{
+		padding:10px;
+		height:auto;
+		width:100%;
+		text-align:center;
+		background:	#ADD8E6;
+		display:flex;
+		justify-content:space-evenly;
+		flex-wrap:wrap;
+	}	
+	.information{
+		width:25%;
+		padding:10px;
+		font-family: 'Raleway', sans-serif;
+	}
+	.information span{
+		font-size:50px;
+		font-weight:700;
+		font-family: 'Poppins', sans-serif;
+		/*font-family: 'Raleway', sans-serif;*/
+	}
+	
+	/*About*/
+	.about-flex{
+		padding-right:50px;
+		padding-left:50px;
+	}
+	.left{
+		width:100%;
+		height:auto;
+	}
+	.left img{
+		width:100%;
+		height:auto; 
+	}
+	.right{
+		width:100%;
+		height:auto;
+		text-align:left;
+		padding:10px;
+	}
+	.right ul li{
+		text-align:left;
+		padding:6px;
+	}
+	
+  }
+  
+  /*screen 992px*/
+    @media(min-width:992px){
+	  .over-all{
+		  height:auto;
+		  width:100%;
+	  }
+	/*work info*/
+    .info{
+		padding:10px;
+		height:auto;
+		width:100%;
+		text-align:center;
+		background:	#ADD8E6;
+		display:flex;
+		justify-content:space-evenly;
+		flex-wrap:wrap;
+	}	
+	.information{
+		padding:10px;
+		font-family: 'Raleway', sans-serif;
+	}
+	.information span{
+		font-size:50px;
+		font-weight:700;
+		font-family: 'Poppins', sans-serif;
+		/*font-family: 'Raleway', sans-serif;*/
+	}
+	
+	/*About*/
+	.about-flex{
+		display:flex;
+		justify-content:center;
+		padding:50px;
+	}
+	.left{
+		width:50%;
+		height:400px;
+	}
+	.left img{
+		width:100%;
+		height:auto; 
+	}
+	.right{
+		width:50%;
+		height:auto;
+		text-align:left;
+		padding:10px;
+	}
+	.right ul li{
+		text-align:left;
+		padding:6px;
+	}
+	
+  }
