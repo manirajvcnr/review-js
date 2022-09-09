@@ -1,32 +1,40 @@
-function vowel(a,c){
-	let vow=0;
-	for(i=0;i<a.length;i++){
-		for(j=0;j<c.length;j++){
-				if(a[i]==c[j])
-					vow++;
+/*let b=parseInt(prompt("Enter the number"));
+let j;
+j=b;
+while(j>0){
+	rem=j%10;
+	j=j/10;
+	j=parseInt(j);
+	switch(rem){
+	case 1:console.log("ONE");
+			break;
+	case 2:console.log("TWO");
+			break;
+	case 3:console.log("THREE");
+			break;
+	case 4:console.log("FOUR");
+			break;
+	case 5:console.log("FIVE");
+			break;
+	case 6:console.log("SIX");
+			break;
+	case 7:console.log("SEVEN");
+			break;
+	case 8:console.log("EIGHT");
+			break;			
+	case 9:console.log("NINE");
+			break;
+	default:console.log("Please enter the number between 0-9");
+			break;	
+	} 
+}*/
+
+let a=[10,5,11,20,12],b=[];
+for(i=0;i<a.length;i++){
+	for(j=0;j<a.length;j++){
+		if(a[i]<a[j]){
+			console.log(a[j]);
+			break;
 		}
 	}
-	return vow;
 }
-
-let vs,vr;
-let s=prompt("Enter the First string "),r=prompt("Enter the Secound string"),v=["a","A",'e','E','i','I','O','o','U','u'];
-vs=vowel(s,v);
-vr=vowel(r,v);
-if(vs==vr){
-	console.log("The both strings has same vowels");
-}
-else if(vs>vr){
-	console.log("The First string has more vowels");
-}else
-	console.log("The Secound string has more vowels");
-
-function color(){
-	let x=Math.trunc(Math.random()*256),
-	y=Math.trunc(Math.random()*256),
-	z=Math.trunc(Math.random()*256),
-	clr="rgb("+x+","+y+","+z+")";
-	document.body.style.background=clr;
-	console.log(clr);
-}
-color();
