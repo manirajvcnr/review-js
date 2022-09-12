@@ -29,12 +29,61 @@ while(j>0){
 	} 
 }*/
 
-let a=[10,5,11,20,12],b=[];
-for(i=0;i<a.length;i++){
-	for(j=0;j<a.length;j++){
-		if(a[i]<a[j]){
-			console.log(a[j]);
-			break;
-		}
-	}
+//function small_large(great){
+//    let t=-1;
+//    great=great.sort(function(a,b){return a-b})
+//    if(great==''){
+//    console.log(t);
+//    }
+//    else
+  //      console.log(great[0]);
+
+//}
+
+//let a=[10,5,11,20,12],great=[];
+//for(i=0;i<a.length;i++){
+//    for(j=0;j<a.length;j++){
+//        if(a[i]<a[j]){
+//            great.push(a[j]);
+    //    }
+  //      
+//    }
+//    console.log(great);
+//    small_large(great);
+ //   great=[];
+//}
+
+let b_day,c_age,t,tt,age,yr;
+b_day = new Date("11/14/1999")
+t=b_day.getTime(); 
+ tt = Date.now() - t;   
+ c_age = new Date(tt);
+ yr = c_age.getUTCFullYear();
+ age = Math.abs(yr - 1970); 
+console.log("The Present Age is",age);
+
+/*
+let gn_date=new Date("09/17/2022"),
+day=gn_date.getDay(gn_date);
+if(day=="0"||day=="6"){
+	console.log("The Date entered is weekend");
 }
+else{
+	console.log("The Date entered is Working day");
+}
+*/
+/*
+// 2.Write a program to calculate age using JS date
+let dob = new Date("02/27/2000"), 
+time=dob.getTime(); 
+// console.log(time);
+let total = Date.now() - time;
+// console.log(total);   
+let age_cal = new Date(total);
+// console.log(age_cal);
+let year = age_cal.getUTCFullYear();
+// console.log(year);
+let age = Math.abs(year - 1970); 
+console.log("Age :"+age);
+
+*/
