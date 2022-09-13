@@ -53,6 +53,7 @@ while(j>0){
  //   great=[];
 //}
 
+/*
 let b_day,c_age,t,tt,age,yr;
 b_day = new Date("11/14/1999")
 t=b_day.getTime(); 
@@ -61,6 +62,7 @@ t=b_day.getTime();
  yr = c_age.getUTCFullYear();
  age = Math.abs(yr - 1970); 
 console.log("The Present Age is",age);
+*/
 
 /*
 let gn_date=new Date("09/17/2022"),
@@ -86,4 +88,41 @@ let year = age_cal.getUTCFullYear();
 let age = Math.abs(year - 1970); 
 console.log("Age :"+age);
 
+*/
+/*
+let d=1,mon=09,yr=2022;
+date=mon+"/"+d+"/"+yr;
+console.log(date);
+//let gn_date=new Date("09/17/2022"),
+let gn_date=new Date(date);
+console.log(gn_date);
+day=gn_date.getDay(gn_date);
+out=gn_date-((24*60*60*1000)*(day-1));
+const output=new Date(out);
+console.log(output);
+*/
+
+
+let d1=13,d2=17,mon1=09,mon2=09,yr1=2022,yr2=2022,
+date1=mon1+"/"+d1+"/"+yr1,
+date2=mon2+"/"+d2+"/"+yr2;
+Dte1=new Date(date1);
+Dte2=new Date(date2);
+let diff=Dte2-Dte1;
+console.log(diff);
+diff_hrs=Math.abs(diff/(1000*60*60));
+console.log("The difference in hours is ",diff_hrs);
+
+/*
+let h1=5,h2=13,d1=13,d2=17,mon1=09,mon2=09,yr1=2022,yr2=2022,
+date1=mon1+"/"+d1+"/"+yr1,
+date2=mon2+"/"+d2+"/"+yr2;
+Dte1=new Date((date1)+(h1*60*60*1000));
+//Dte1=new Date(date1);
+Dte2=new Date(date2);
+console.log(Dte1);
+let diff=Dte2-Dte1;
+console.log(diff);
+diff_hrs=Math.abs(diff/(1000*60*60));
+console.log("The difference in hours is ",diff_hrs);
 */
