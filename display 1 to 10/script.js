@@ -19,8 +19,7 @@ for(i=0;i<num.length;i++){
 var n = 12345;
 var arr = n.toString().split('');
 for (i = 0; i < arr.length; i++) arr[i] = +arr[i] | 0;
-console.log(arr);
 
-const numToSeparate = 12345;
+const numToSeparate = ;
 const arrayOfDigits = Array.from(String(numToSeparate), Number);
 console.log(arrayOfDigits); 
