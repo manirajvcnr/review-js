@@ -129,13 +129,13 @@ console.log("The difference in hours is ",diff_hrs);
 */
 
 //For difference in hours
-
+/*
 const d = new Date(2018, 11, 24, 10, 33, 30, 0);
 const a = new Date(2018, 11, 24, 13, 33, 30, 0);
 let res=a-d;
 res=res/(1000*60*60);
 console.log("The Difference in hours is "+res+"hours");
-
+*/
 /*
 function bg_chng(){
 	let r=Math.floor(Math.random()*256);
@@ -191,4 +191,4 @@ let a=prompt("Enter the first string"),i,j,x=0;
 if(x)
 	console.log("The given string is not a palindrome");
  else
-	console.log("The given string is a palindrome");
+	console.log("The given string is a palindrome");																																										
