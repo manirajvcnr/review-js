@@ -24,17 +24,71 @@ while(i>0){
 	document.getElementById("res").innerHTML="The Present Age is "+age;
 	
 }) */
+/* document.getElementById("btn").addEventListener("click",function(){
+		let inp=document.getElementById("input").value, alpha;
+		alpha=inp.replace(/[^a-zA-z]/g,"");
+		console.log(alpha); */
 
-document.getElementById("btn").addEventListener("click",function(){
-		let inp=document.getElementById("input").value,res=[""];
-		for(x in inp){
-			asc=inp[x].charCodeAt()
-			for(i=48;i<91;i++){
-				if(asc==i){
-					res.push(inp[x]);
-				}
-			}
+/*   document.getElementById("btn").addEventListener("click",function(){
+		let inp=document.getElementById("input").value, alpha,no,even;
+		/* alpha=inp.replace(/[^a-zA-z]/g,"");
+		no=inp.replace(/[^0-9]/g,"");
+		console.log(alpha);
+		console.log(no);  */
+		
+/* 		let resEle=document.getElementById("res");
+		even=/[02468]$/g; 
+		if(even.test(inp)){
+			resEle.innerHTML="The Given Number is Even";
+			resEle.style.color="blue";
+		}else{
+			resEle.innerHTML="The Given Number is Odd";
+			resEle.style.color="blue";
 		}
-		let result=res.join();
-		document.getElementById("res").innerHTML="The Resultant String is "+result;
+}) */
+/*   document.getElementById("btn").addEventListener("click",function(){
+		let inp=document.getElementById("input").value, alpha,no,even;
+		/* alpha=inp.replace(/[^a-zA-z]/g,"");
+		no=inp.replace(/[^0-9]/g,"");
+		console.log(alpha);
+		console.log(no);  */
+		
+		/* let resEle=document.getElementById("res");
+		even=/[02468]$/g; 
+		let evenno=inp.replace(/[02468]/g,"");
+		console.log(evenno);
+		let oddno=inp.replace(/[13579]/g,"");
+		console.log(oddno);
+		 */
+/* 		even=/[02468]$/g; 
+		 if(even.test(inp)){
+			resEle.innerHTML="The Given Number is Even";
+			resEle.style.color="blue";
+		}else{
+			resEle.innerHTML="The Given Number is Odd";
+			resEle.style.color="blue";
+		}
+}) */ 
+
+/*  document.getElementById("btn").addEventListener("click",function(){
+		let inp=document.getElementById("input").value, alpha,no,even;
+		let resEle=document.getElementById("res"),res1Ele=document.getElementById("res1");
+		let oddno=inp.replace(/[02468]/g,"");
+		resEle.innerHTML=oddno;
+		let evenno=inp.replace(/[13579]/g,"");
+		res1Ele.innerHTML=evenno;
+ }) */
+ 
+ 
+ document.getElementById("btn").addEventListener("click",function(){
+		let inp=document.getElementById("input").value, alpha,no,even,
+		resEle=document.getElementById("res");
+			even=/[02468]$/g; 
+		if(even.test(inp)){
+			resEle.innerHTML="The Given Number is Even";
+			resEle.style.color="blue";
+		}else{
+			resEle.innerHTML="The Given Number is Odd";
+			resEle.style.color="blue";
+		}
 })
