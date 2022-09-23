@@ -7,3 +7,4 @@ console.log(key+":"+student[key]);
 for(let x in student.hobby){
 console.log(x+":"+student.hobby[x]);		
 }
+

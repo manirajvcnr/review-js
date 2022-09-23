@@ -80,7 +80,7 @@ while(i>0){
  }) */
  
  
- document.getElementById("btn").addEventListener("click",function(){
+/*  document.getElementById("btn").addEventListener("click",function(){
 		let inp=document.getElementById("input").value, alpha,no,even,
 		resEle=document.getElementById("res");
 			even=/[02468]$/g; 
@@ -91,4 +91,57 @@ while(i>0){
 			resEle.innerHTML="The Given Number is Odd";
 			resEle.style.color="blue";
 		}
+}) */
+
+/* function printRes(e,o){
+	document.getElementById("res-eve").innerHTML="The Sum of Even Numbers are "+e;
+	document.getElementById("res-odd").innerHTML="The Sum of Odd Numbers are "+o;
+
+}
+let sumEle=document.getElementById("reg_sum");
+document.getElementById("reg-btn").addEventListener("click",function(){
+	console.log("hi");
+	let even=/[02468]$/g;
+	let evenSum=0,oddSum=0;
+	let regInp=sumEle.value,inpSli=[...regInp];
+	inpSli.map((num)=>{
+		if(even.test(num)){
+			num=parseInt(num);
+			evenSum+=num;
+		}else{
+			num=parseInt(num);
+			oddSum+=num;
+		}
+		
+	})
+	printRes(evenSum,oddSum);
 })
+ */
+ 
+ function humanize(remi,org){
+	let resEle=document.getElementById("res-eve");	
+	switch(remi){
+		case 1:resEle.innerHTML=org+"st";
+			break;
+		case 2:resEle.innerHTML=org+"nd";
+			break;
+		case 3:resEle.innerHTML=org+"rd";
+			break;
+		default:resEle.innerHTML=org+"th";
+			break;		
+	 }
+ }
+ 
+document.getElementById("reg-btn").addEventListener("click",function(){ 
+let inpVal=document.getElementById("reg_sum").value,rem=0;
+let resEle=document.getElementById("res-eve");
+	if((inpVal>3)&&(inpVal<21)){
+	resEle.innerHTML=inpVal +"th";
+}	else{
+	rem=inpVal%10;
+	console.log(rem);
+	humanize(rem,inpVal);
+}
+
+})
+
