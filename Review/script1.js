@@ -118,30 +118,52 @@ document.getElementById("reg-btn").addEventListener("click",function(){
 })
  */
  
- function humanize(remi,org){
-	let resEle=document.getElementById("res-eve");	
-	switch(remi){
-		case 1:resEle.innerHTML=org+"st";
-			break;
-		case 2:resEle.innerHTML=org+"nd";
-			break;
-		case 3:resEle.innerHTML=org+"rd";
-			break;
-		default:resEle.innerHTML=org+"th";
-			break;		
-	 }
- }
+ // function humanize(remi,org){
+	// let resEle=document.getElementById("res-eve");	
+	// switch(remi){
+		// case 1:resEle.innerHTML=org+"st";
+			// break;
+		// case 2:resEle.innerHTML=org+"nd";
+			// break;
+		// case 3:resEle.innerHTML=org+"rd";
+			// break;
+		// default:resEle.innerHTML=org+"th";
+			// break;		
+	 // }
+ // }
  
-document.getElementById("reg-btn").addEventListener("click",function(){ 
-let inpVal=document.getElementById("reg_sum").value,rem=0;
-let resEle=document.getElementById("res-eve");
-	if((inpVal>3)&&(inpVal<21)){
-	resEle.innerHTML=inpVal +"th";
-}	else{
-	rem=inpVal%10;
-	console.log(rem);
-	humanize(rem,inpVal);
+// document.getElementById("reg-btn").addEventListener("click",function(){ 
+// let inpVal=document.getElementById("reg_sum").value,rem=0;
+// let resEle=document.getElementById("res-eve");
+	// if((inpVal>3)&&(inpVal<21)){
+	// resEle.innerHTML=inpVal +"th";
+// }	else{
+	// rem=inpVal%10;
+	// console.log(rem);
+	// humanize(rem,inpVal);
+// }
+
+// })
+
+let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],sevStr,indi=0;
+for(i=1;i<=sevRnge;i++){
+	if(i%7==0){
+		// sevStr=i.toString();
+		resArr.push(i);
+		console.log(resArr);
+	}
 }
 
-})
-
+for(i=0;i<resArr.length;i++){
+	let arr1=resArr[i],
+	arr1=[...arr1];
+	console.log(arr);
+	for(j=0;i<arr1.length;j++){
+		if(arr1[j]<arr1[j+1]){}
+		else
+			indi++;
+	if(indi==0){
+		console.log(resArr[i]);
+	}
+	}	
+}
