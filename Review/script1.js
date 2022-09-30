@@ -144,8 +144,8 @@ document.getElementById("reg-btn").addEventListener("click",function(){
 // }
 
 // })
-
-let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],sevStr,indi=0;
+ /* 
+let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],sevStr,rem=0,rem1=[];
 for(i=1;i<=sevRnge;i++){
 	if(i%7==0){
 		// sevStr=i.toString();
@@ -153,17 +153,36 @@ for(i=1;i<=sevRnge;i++){
 		console.log(resArr);
 	}
 }
-
-for(i=0;i<resArr.length;i++){
-	let arr1=resArr[i],
-	arr1=[...arr1];
-	console.log(arr);
-	for(j=0;i<arr1.length;j++){
-		if(arr1[j]<arr1[j+1]){}
-		else
-			indi++;
-	if(indi==0){
-		console.log(resArr[i]);
+for(i=1;i<resArr;i++){
+	j=resArr[i];
+	while(j<0){
+		rem=j%10;
+		rem1.push(rem);
+		j=j/10;
 	}
-	}	
+	
+	}	 */
+
+ 
+ 
+ 
+ let obj=[{
+	name:"Hector", role:"King", period:"1600 AD", century:2,
+},{
+	name:"Hector", role:"King", period:"1600 AD" , century:2,
+},{
+	name:"Hector", role:"King", period:"1600 AD" ,
+},{
+	name:"Hector", role:"King", period:"1600 AD" ,
+},{
+	name:"Hector", role:"King", period:"1600 AD",
+}],
+
+arrLen=obj.length,objLen=0;
+console.log(arrLen);
+for (i=0;i<arrLen;i++){
+	for(x in obj[i]){
+		objLen++;
+	}
 }
+console.log(objLen); 
