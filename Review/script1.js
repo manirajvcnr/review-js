@@ -166,7 +166,7 @@ for(i=1;i<resArr;i++){
  
  
  
- let obj=[{
+ /* let obj=[{
 	name:"Hector", role:"King", period:"1600 AD", century:2,
 },{
 	name:"Hector", role:"King", period:"1600 AD" , century:2,
@@ -186,3 +186,31 @@ for (i=0;i<arrLen;i++){
 	}
 }
 console.log(objLen); 
+ */
+
+var result = [],res=0,ab,ba;
+var answer = []
+for(i=1;i<=200;i++){
+	if(i%7==0){
+		// sevStr=i.toString();
+		result.push(i);
+	}
+}
+
+for(i=0;i<result.length;i++){
+	if(result[i]<100){
+    var a = result[i] % 10;
+	var b = Math.floor(result[i]/10)
+	if(b<a){
+		console.log(result[i]);
+	}
+	}else{
+	res=result[i]-100;
+	ab = res % 10;
+	ba = Math.floor(res/10)
+	if(ba<ab){
+		console.log(result[i]);
+	}	
+}
+
+}

@@ -1,4 +1,5 @@
 
+
 //button to text color 
 /*function colorchange(){
 	let heading=document.getElementById("head");
