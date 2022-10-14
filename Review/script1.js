@@ -188,7 +188,7 @@ for (i=0;i<arrLen;i++){
 console.log(objLen); 
  */
 
-var result = [],res=0,ab,ba;
+/* var result = [],res=0,ab,ba;
 var answer = []
 for(i=1;i<=200;i++){
 	if(i%7==0){
@@ -213,4 +213,175 @@ for(i=0;i<result.length;i++){
 	}	
 }
 
+} */
+
+//  Array Methods 
+
+// FOR EACH
+
+/* let nums=[2,4,5,6],add=0,addi=0,
+sum=(n)=>{
+	for(i=0;i<n.length;i++){
+		add+=n[i];
+	}
+	console.log(add);
+};
+sum(nums);
+let marks={
+	English:78,
+	Tamil:85,
+	Maths:60,
+	Science:88,
+	Social:78,
+},total=0;
+
+Object.keys(marks).forEach((k)=>{
+	addi+=marks[k];
+	console.log(addi);		
+});
+
+// Map Function 
+// Takes a func as argument and runs the function for each value   
+
+let work=["Doctor","Driver","Engineer"];
+work.map((is)=>{
+	console.log("He is a "+is);
+})
+let professional={
+	Arun:"Techie",
+	Vishal:"Mechanic",
+	Rathore:"Doctor",
 }
+Object.entries(professional).map((ent=>{
+	[person,kaam]=ent;
+	// console.log(ent);
+	// console.log(person);
+	// console.log(kaam);
+
+	console.log(person+" is a "+kaam);
+}))
+
+// reduce,filter,find,string,every ,splice
+
+//reduce
+// Takes a func as argument and gives a single value as result  
+
+let mrk1=[84,56,84,78,69],tot=0,prev,pres,ini=0;
+console.log(mrk1.reduce((prev,pres)=>{
+	return(prev+pres);
+}));
+ */
+// In object
+
+// console.log(Object.keys(marks).reduce((prev,pres)=>{
+// 	console.log(marks[prev]);
+// 	return(marks[prev]+marks[pres]);
+// }));
+
+// Every Method 
+/* 
+let mrk2=[84,56,35,78,69];res=0;
+if(mrk2.every((ev)=>{
+	if(ev>40){
+		return true;
+	}else
+		return false;
+})){
+	console.log("The given student is Pass");
+}else{
+	console.log("The given student is Fail");
+}
+if(Object.keys(marks).every((eve)=>{
+	if(eve>40){
+		return true;
+	}else
+		return false;
+}))
+	console.log("The given student is Pass");
+else
+	console.log("The given student is Fail");
+
+// Filter method	
+
+let mrks=[84,54,22,26,32],
+pass=(mrks.filter((ab)=>{if(ab>35){return ab}}));
+console.log("The pass marks are",pass);
+
+// object 
+
+let pass_m=[];
+pass_m=Object.keys(marks).filter((abc)=>{
+	console.log(marks[abc]);
+	if(marks[abc]>35)
+	{
+		return (marks[abc])
+	}
+});
+console.log("The passed subjects are ",pass_m);
+
+// Find Method 
+let names=["Victor","Hector","Sector","Zap","Hector"];
+console.log(names.find((ba)=>ba=="Hector"));
+console.log(names.findIndex((ba)=>ba=="Hector"));
+console.log(names.findLastIndex((ba)=>ba=="Hector"));
+console.log(names.findLast((ba)=>ba=="Hector"));
+
+// object 
+
+console.log(Object.keys(marks).find((k)=>marks[k]>80));
+ */
+// Flat Method
+// Reduces the level of nested array and takes number as parameter
+/* let ae=[1,23,[[[45],58]],34],
+bq=ae.flat(2);
+console.log(bq);
+
+// FlatMap 
+let aee=[1,23,[45,7],[58],34],
+bqe=aee.flatMap((af)=>{return(af*2)});
+console.log(bqe);
+
+// values ,Reduce right ,Last Index ,includes
+
+// values
+// Used to Return an object containing the values of the array 
+let av=[54,25,98];
+bv=av.values();
+console.log(av.values());
+for(x of bv)
+	console.log(x);
+
+// LastIndex of Method
+// Returns the Index Last value of the iteration 
+let atd=[21,2,84,5,47,2,2];
+console.log(atd.lastIndexOf(2));
+
+// includes Method 
+
+var arr=[1,5,8,4,3,35,45];
+if(arr.includes(9))
+	console.log("The array has the number 9");
+else
+	console.log("The array doesn't has the number 9");
+
+// Reduce Right
+arr=[[1,5],[8,4]];
+console.log(arr.reduceRight((accumulator,cval)=>{
+	return(accumulator.concat(cval));
+})); */
+
+let arr=[1,2,3,4,5,6,7,8,9,10],c=[];
+//Filter Method
+console.log(arr.filter((a)=> a%2==1));
+
+console.log(arr.filter((a)=>(a%2==0)||(a%5==0)));
+	
+//Reduce Method
+let b=[],sum=0;
+b=(arr.filter((a)=>(a%3==0)));
+console.log(b);
+console.log(b.map((a)=>a**2));
+
+let cb=[], sum1;
+cb=(arr.filter((a)=>a%5==0));	
+console.log(cb.map((a)=>a**2));
