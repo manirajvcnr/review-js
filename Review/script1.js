@@ -370,7 +370,7 @@ console.log(arr.reduceRight((accumulator,cval)=>{
 	return(accumulator.concat(cval));
 })); */
 
-let arr=[1,2,3,4,5,6,7,8,9,10],c=[];
+/* let arr=[1,2,3,4,5,6,7,8,9,10],c=[];
 //Filter Method
 console.log(arr.filter((a)=> a%2==1));
 
@@ -384,4 +384,52 @@ console.log(b.map((a)=>a**2));
 
 let cb=[], sum1;
 cb=(arr.filter((a)=>a%5==0));	
-console.log(cb.map((a)=>a**2));
+console.log(cb.map((a)=>a**2)); */
+
+
+/* Entry Form  */
+
+/* let entry=document.getElementById("entry"),
+// console.log(entry);
+update=function(disArr){
+	let tableEle=document.getElementById("ent-table"),
+	len=disArr.length;
+	for(i=0;i<1;i++){
+		console.log(disArr);
+		let newEnt=document.createElement("tr");
+		newData=document.createElement("td");
+		newData.setAttribute("class","table-info");
+		// console.log(newEnt);
+		newData.innerHTML=disArr[len-1];
+		tableEle.appendChild(newEnt);
+		newEnt.appendChild(newData);
+	}
+},
+addBtn=document.getElementById("add"),
+arr=[];
+
+addBtn.addEventListener("click",()=>{
+	entryVal=entry.value,
+	arr.push(entryVal);
+	console.log(entryVal);
+	console.log(arr);
+	update(arr);
+	
+})
+ */
+ 
+ 
+ let inp=parseInt(prompt("Enter thr Number"));
+ strInp=String(inp);
+ console.log(strInp);
+ console.log(typeof(strInp));
+let arr=[...strInp]
+console.log(arr);
+for(i=0;i<arr.length;i++){
+	if((arr[i]%2==0)&&(arr[i+1]%2==0)){
+		arr.splice((i+1),0,"-");
+	}
+}
+let res=arr.toString();
+res=res.replaceAll(",","");
+console.log(res);

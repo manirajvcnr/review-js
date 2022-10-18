@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<style>
+		.table-info{
+			font-size: 2rem;
+		}
+	</style>
 </head>
 <body>
-	<section id="bgclr" style="width:100% height:100%;">
+	<section id="bgclr" style="width:100% ;height:100%;">
 	<h1 id="head" style="color:rbg(5120,25600,154)">Hi all </h1>
 	<label>Enter the Color to Change the Background</label><br>
 	<input type="text" id="inp">
@@ -27,7 +32,21 @@
     <input type="text" id="reg_sum"> <button id="reg-btn">Evaluate</button>
     <p id="res-eve"></p>
     <p id="res-odd"></p>
+	
+<!-- 	Adding the elements in an array -->
+
+	<h1> The table</h1>
+	<table id="ent-table" style="color: red;">
+	</table>
+	
+	<h3>Data Form</h3>
+	<label for="entry"> New Entry :</label>
+	<input type="text" name="entry" id="entry"> 
+	<button id="add">Add</button>
+	<button id="submit">Submit</button>
+	
     <script src="script1.js"></script>
+    <!-- <script src="promise.js"></script> -->
 	<!-- <script src="script.js"></script>   -->
 	<!-- <script src="script1.js"></script>  -->
 </body>
